@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Site - Login</title>
+</head>
+
+<body>
+
+  <nav>
+    <div class="back-button">
+      <a href="../model/menu.php" class="back-link"></a>
+    </div>
+    <header> LOGIN </header>
+  </nav>
+
+  <section class= "flex">
+    <fieldset>
+      <legend>Digite suas credenciais</legend>
+
+    <form class="sendform" method="POST" action="../model/sendLogin.php">
+
+        <label for="cxemail">E-mail:</label>
+        <input type="text" id="cxemail" name="cxemail" placeholder="Digite seu email" required>
+        <br><br>
+        <label for="cxpassword">Senha:</label>
+        <input type="password" id="cxpassword" name="cxpassword" placeholder="Digite sua senha" required>
+        <br><br>
+        <input class="submitbox" type="submit" value="Entrar">
+        <button ><a href="userform.html">Cadastrar</a> </button>
+    </form>
+    <img class="form-img" id="lock" src="./img/lock.webp">
+    
+  </fieldset>
+  
+  
+  </section>
+
+
+  
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Cadastro de Usuário</title>
+</head>
+
+<body>
+  <nav>
+    <div class="back-button">
+      <a href="../model/menu.php" class="back-link"></a>
+    </div>
+    <header> Cadastro de novos usuários </header>
+  </nav>
+ 
+
+  <section class= "flex">
+
+    <fieldset>
+      <legend>Formulário de Cadastro</legend>
+
+    <form class="sendform" method="POST" action="../model/pushClientForm.php">
+  
+        <label for="cxname">Nome:</label>
+        <input type="text" id="cxname" name="cxname" placeholder="Digite seu nome" required>
+        <br><br>
+        <label for="cxemail">E-mail:</label>
+        <input type="text" id="cxemail" name="cxemail" placeholder="Digite seu email" required>
+        <br><br>
+        <label for="cxpassword">Senha:</label>
+        <input type="text" id="cxpassword" name="cxpassword" placeholder="Digite sua senha" required>
+        <br><br>
+        <input class="submitbox" type="submit" value="Enviar">
+       
+    </form>
+    <img class="form-img" id="lock" src="./img/lock.webp">
+  </fieldset>
+  
+  <button id="list-button"><a href="../model/listClients.php">Listar Usuários</a> </button>
+  
+  
+  </section>
+
+
+  
+</body>
+</html>

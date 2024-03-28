@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Site - Pesquisa Clientes</title>
+</head>
+
+<body>
+
+  <nav>
+    <div class="back-button">
+      <a href="../model/menu.php" class="back-link"></a>
+    </div>
+    <header> Lista de Produtos cadastrados </header>
+  </nav>
+
+  <section class= "flex">
+    <fieldset>
+      <legend>Digite o nome do usuário</legend>
+
+    <form class="sendform" method="POST" action="../model/searchClient.php">
+
+        <label for="cxname">Nome:</label>
+        <input type="text" id="cxname" name="cxname" placeholder="João..." required>
+        <br><br>
+        <input class="submitbox" type="submit" value="Pesquisar">
+    </form>
+  </fieldset>
+
+  
+  </section>
+
+
+  
+</body>
+</html>

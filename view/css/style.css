@@ -1,0 +1,97 @@
+body{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(41, 41, 41);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+  display: flex;
+}
+
+
+header{
+  align-self: center;
+  margin: auto;
+}
+
+.back-button {
+  align-self: center;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+}
+
+
+.flex{
+  margin:  0 auto;
+  width: 28em;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+fieldset{
+  border-radius: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-areas:
+		"sendform form-img";
+}
+
+.sendform{
+  grid-area: sendform;
+}
+
+#lock{
+  width: 80px;
+  padding: 5px;
+  margin: 10px;
+  
+}
+
+
+
+.back-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/back.png');
+  background-size: cover;
+}
+
+#list-button{
+  margin: 0.5em auto;
+  padding: 0.5em;
+  width: 10vw;
+  border-radius: 5px;
+}
+
+#list-button a{
+  color: black;
+  text-decoration: none;
+}
+
+#list-button a:hover{
+  color: rgb(78, 23, 130);
+}
+
+
+.info-list{
+ 
+  margin:  auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+}
+
+.list-form{
+  text-align: center;
+  padding: 20px;
+}

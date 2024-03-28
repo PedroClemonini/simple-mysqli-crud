@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Cadastro de Produto</title>
+</head>
+
+<body>
+
+  <nav>
+    <div class="back-button">
+      <a href="../model/menu.php" class="back-link"></a>
+    </div>
+    <header> Cadastro de novos produtos</header>
+  </nav>
+
+
+  
+
+  <section class= "flex">
+    <fieldset>
+      <legend>Formulário de Cadastro</legend>
+
+    <form class="sendform" method="POST" action="../model/pushProductForm.php">
+  
+        <label for="cxname">Nome:</label>
+        <input type="text" id="cxname" name="cxname" placeholder="Xampu" required>
+        <br><br>
+        <label for="cxprice">Preço (R$): </label>
+        <input type="text" id="cxprice" name="cxprice" placeholder="30,00" required>
+        <br><br>
+        <label for="cxdate">Data de validade:</label>
+        <input type="date" id="cxdate" name="cxdate" required>
+        <br><br>
+        <input class="submitbox" type="submit" value="Enviar">
+     
+    </form>
+    <img class="form-img" id="lock" src="./img/box-7186750_1280.webp">
+  </fieldset>
+  
+  <button id="list-button"><a href="../model/listProducts.php">Listar Produtos</a> </button>
+
+  </section>
+  
+
+  
+</body>
+</html>
